@@ -3,10 +3,10 @@ import { Statistics } from 'components/Statistics/Statistics';
 import { FriendList } from 'components/FriendList/FriendList';
 import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 
-import user from './Profile/user.json';
-import data from './Statistics/data.json';
-import friends from './FriendList/friends.json';
-import transactions from './TransactionHistory/transactions';
+import user from 'data/user.json';
+import data from 'data/data.json';
+import friends from 'data/friends.json';
+import transactions from 'data/transactions.json';
 
 import { List } from './App.styled';
 
@@ -15,7 +15,7 @@ import { List } from './App.styled';
 export const App = () => {
   return (
     <List>
-      <Profile key={user.tag} user={user} />
+      <Profile user={user} />
       <Statistics title="Upload stats" stats={data} />
       {/* <Statistics stats={data} /> */}
       <FriendList friends={friends} />

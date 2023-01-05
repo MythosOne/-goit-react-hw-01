@@ -41,11 +41,13 @@ background-color: ${function getRandomHexColor() {
 
 export const Label = styled.span`
 font-size: 14px;
+color: #ececec;
 margin-bottom: 5px;
 margin-top: 5px;
 `;
 
 export const  Percentage = styled.span`
 font-size: 18px;
+color: #ececec;
 margin-bottom: 5px;
 `;
